@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RadioDetailHeader">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="224"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XdE-Cc-SWT">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="XdE-Cc-SWT" secondAttribute="height" multiplier="375:128" id="SLe-dL-PCB"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cor-8P-lwV">
+                    <rect key="frame" x="13" y="143" width="62" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="aAZ-Y8-THs"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="62" id="k4Y-oE-HAu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.71182420560000004" green="0.66518652170000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsT-gp-68b">
+                    <rect key="frame" x="272" y="143" width="80" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="7bU-v3-HA5"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="YmO-bR-YEi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRh-Io-C4u">
+                    <rect key="frame" x="13" y="177" width="80" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="Nw3-f5-C1o"/>
+                        <constraint firstAttribute="height" constant="21" id="mpr-1W-MpO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jRh-Io-C4u" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="13" id="9bQ-L7-q7a"/>
+                <constraint firstItem="XdE-Cc-SWT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="AHP-V6-8fh"/>
+                <constraint firstItem="XdE-Cc-SWT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Jzy-h6-edm"/>
+                <constraint firstItem="jRh-Io-C4u" firstAttribute="top" secondItem="Cor-8P-lwV" secondAttribute="bottom" constant="13" id="OLb-OK-2w2"/>
+                <constraint firstAttribute="trailing" secondItem="XdE-Cc-SWT" secondAttribute="trailing" id="S01-dG-awd"/>
+                <constraint firstItem="Cor-8P-lwV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="13" id="d9H-iO-bfe"/>
+                <constraint firstItem="GsT-gp-68b" firstAttribute="baseline" secondItem="Cor-8P-lwV" secondAttribute="baseline" id="eex-ZI-Ues"/>
+                <constraint firstAttribute="trailing" secondItem="GsT-gp-68b" secondAttribute="trailing" constant="23" id="i2U-58-wmW"/>
+                <constraint firstItem="GsT-gp-68b" firstAttribute="top" secondItem="XdE-Cc-SWT" secondAttribute="bottom" constant="15" id="vAV-jV-TSv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="authorLabel" destination="Cor-8P-lwV" id="6LV-w8-v4m"/>
+                <outlet property="countLabel" destination="GsT-gp-68b" id="7EJ-nL-2o0"/>
+                <outlet property="descLabel" destination="jRh-Io-C4u" id="m2P-p8-AAC"/>
+                <outlet property="imgView" destination="XdE-Cc-SWT" id="OsN-cV-Jav"/>
+            </connections>
+            <point key="canvasLocation" x="315.5" y="207"/>
+        </view>
+    </objects>
+</document>
